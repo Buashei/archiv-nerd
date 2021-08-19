@@ -1,0 +1,33 @@
+.cardRow_wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0 1vw;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0.5vw;
+    background: #2167b62a;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 0.5vw;
+    transition: 2s background;
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.1);
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transition: 2s background;
+  }
+}
